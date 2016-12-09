@@ -3,6 +3,9 @@ import { Router } from 'express'
 import user from './api/user'
 import auth from './api/auth'
 import article from './api/article'
+import sub from './api/sub'
+import subject from './api/subject'
+import asession from './api/asession'
 
 const router = new Router()
 
@@ -34,5 +37,8 @@ const router = new Router()
 router.use('/users', user)
 router.use('/auth', auth)
 router.use('/articles', article)
+router.use('/subs', sub)
+router.use('/subjects', subject)
+router.use('/asessions', asession)
 
 export default router

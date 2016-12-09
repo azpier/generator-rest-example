@@ -126,4 +126,5 @@ userSchema.statics = {
 // it defines a `keywords` field combining `email` and `name`
 userSchema.plugin(mongooseKeywords, { paths: ['email', 'name'] })
 
+//export default mongoose.model('User', userSchema)
 export default mongoose.model('User', userSchema)
